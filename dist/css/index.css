@@ -1,0 +1,451 @@
+@charset "UTF-8";
+.course-advantage .content .advantage li span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn-module a {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.about-us .content, .course-advantage .content .advantage, .campuses .content .area, .professor .content .area, .professor .content .area li .experience .item {
+  zoom: 1;
+}
+
+.about-us .content:after, .course-advantage .content .advantage:after, .campuses .content .area:after, .professor .content .area:after, .professor .content .area li .experience .item:after {
+  clear: both;
+}
+
+.about-us .content:before, .course-advantage .content .advantage:before, .campuses .content .area:before, .professor .content .area:before, .professor .content .area li .experience .item:before, .about-us .content:after, .course-advantage .content .advantage:after, .campuses .content .area:after, .professor .content .area:after, .professor .content .area li .experience .item:after {
+  content: "";
+  display: table;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 86px;
+  background-color: #ffffff;
+}
+
+.header .nuoda {
+  float: left;
+  margin-top: 16px;
+  padding-right: 20px;
+  margin-right: 15px;
+  border-right: 1px solid #cccccc;
+}
+
+.header .eu {
+  float: left;
+  margin-top: 24px;
+}
+
+.header .header-right {
+  float: right;
+}
+
+.header .header-right .nav {
+  float: left;
+  margin-right: 42px;
+  margin-top: 35px;
+}
+
+.header .header-right .nav li {
+  float: left;
+  cursor: pointer;
+  padding: 0 20px;
+  color: #333333;
+  font-size: 16px;
+}
+
+.header .header-right .nav li:hover {
+  color: #167e48;
+}
+
+.header .header-right .tel {
+  float: right;
+  margin-top: 17px;
+}
+
+.header .header-right .tel .icon {
+  float: left;
+  width: 52px;
+  height: 52px;
+  background: url("../images/tel.png") no-repeat;
+  margin-right: 8px;
+}
+
+.header .header-right .tel .text {
+  float: right;
+  text-align: left;
+}
+
+.header .header-right .tel .text .hotline {
+  font-size: 14px;
+  color: #666666;
+}
+
+.header .header-right .tel .text .number {
+  font-size: 24px;
+  color: #ef562f;
+}
+
+.banner {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+}
+
+.title-module {
+  height: 62px;
+  font-size: 40px;
+  color: #333333;
+  text-align: center;
+  position: relative;
+}
+
+.title-module strong {
+  font-weight: bold;
+  color: #167e48;
+}
+
+.title-module .cn {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.title-module .en {
+  color: #eeeeee;
+  position: absolute;
+  top: 22px;
+}
+
+.title-module .cn, .title-module .en {
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 40px;
+}
+
+.about-us {
+  padding-top: 60px;
+}
+
+.about-us .content {
+  background: url("../images/bg_1.png") no-repeat center right;
+  margin-top: 20px;
+  padding: 55px 0;
+}
+
+.about-us .content .school {
+  width: 520px;
+  height: 360px;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.about-us .content .detail {
+  width: 592px;
+  height: 360px;
+  float: left;
+  margin-left: 50px;
+}
+
+.about-us .content .detail .detail-title {
+  width: 440px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us .content .detail .detail-title .left {
+  float: left;
+  width: 260px;
+  height: 42px;
+  background-color: #167e48;
+  color: #ffffff;
+  border-radius: 21px 0 0 21px;
+}
+
+.about-us .content .detail .detail-title .right {
+  float: left;
+  width: 178px;
+  height: 40px;
+  border-radius: 0 21px 21px 0;
+  border: solid 1px #167e48;
+  color: #167e48;
+}
+
+.about-us .content .detail .text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.about-us .content .detail .btn {
+  display: block;
+  width: 240px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #f0552f;
+  border-radius: 8px;
+  border: solid 1px #f0552f;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-module {
+  text-align: center;
+}
+
+.btn-module a {
+  width: 240px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  border: solid 1px #f0552f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  margin-right: 48px;
+  color: #f0552f;
+}
+
+.btn-module a.active {
+  background-color: #f0552f;
+  color: #ffffff;
+}
+
+.btn-module a:last-child {
+  margin-right: 0;
+}
+
+/* 课程优势 */
+.course-advantage {
+  padding-top: 60px;
+}
+
+.course-advantage .content .text {
+  color: #666666;
+  font-size: 14px;
+  padding: 0 88px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.course-advantage .content .advantage {
+  margin-right: -30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.course-advantage .content .advantage li {
+  width: 216px;
+  height: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  margin-right: 30px;
+  padding-top: 57px;
+  text-align: center;
+}
+
+.course-advantage .content .advantage li span {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 40px;
+}
+
+/* 校区 */
+.campuses {
+  width: 100%;
+  height: 668px;
+  background: url("../images/bg_2.png") no-repeat center;
+  background-size: cover;
+  margin-top: 60px;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.campuses .content .area {
+  margin-right: -20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.campuses .content .area li {
+  width: 285px;
+  height: 380px;
+  padding: 270px 52px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  background-size: 100% 100%;
+}
+
+.campuses .content .area li .school-name {
+  width: 180px;
+  background-color: #167e48;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #eeeeee;
+  padding: 8px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 22px;
+}
+
+.campuses .content .area li .school-name span {
+  display: block;
+}
+
+/* 课程介绍 */
+.course-introduce {
+  width: 100%;
+  height: 804px;
+  background: url("../images/bg_3.png") no-repeat center bottom;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.course-introduce .text {
+  width: 686px;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+  margin: 24px auto 0;
+}
+
+.course-introduce .btn-module {
+  margin-top: 520px;
+}
+
+/* 教授 */
+.professor {
+  width: 100%;
+  height: 700px;
+  background: url("../images/bg_4.png") no-repeat center;
+  background-size: cover;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.professor .title-module .cn {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.professor .title-module .en {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.professor .content .area {
+  margin-right: -30px;
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+
+.professor .content .area li {
+  width: 380px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+  background-size: 100% 100%;
+}
+
+.professor .content .area li .avatar {
+  margin-top: -60px;
+}
+
+.professor .content .area li .name {
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.professor .content .area li .name span {
+  font-size: 14px;
+  color: #999999;
+}
+
+.professor .content .area li .honor {
+  margin-top: 16px;
+}
+
+.professor .content .area li .honor strong {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: #167e48;
+  font-weight: normal;
+}
+
+.professor .content .area li .honor span {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+.professor .content .area li .experience {
+  margin-top: 40px;
+}
+
+.professor .content .area li .experience .item .icon {
+  float: left;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../images/arrows.png") no-repeat;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+
+.professor .content .area li .experience .item p {
+  float: left;
+  width: 294px;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+}
+
+.professor .content .btn-module a {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.professor .content .btn-module a.active {
+  border: 1px solid #f0552f;
+}

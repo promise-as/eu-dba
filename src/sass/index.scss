@@ -1,0 +1,415 @@
+$txt-color: #167e48;
+$bg-color: #f0552f;
+
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  height: 86px;
+  background-color: #ffffff;
+  .nuoda{
+    float: left;
+    margin-top: 16px;
+    padding-right: 20px;
+    margin-right: 15px;
+    border-right: 1px solid #cccccc;
+  }
+  .eu{
+    float: left;
+    margin-top: 24px;
+  }
+  .header-right{
+    float: right;
+    .nav{
+      float: left;
+      margin-right: 42px;
+      margin-top: 35px;
+      li{
+        float: left;
+        cursor: pointer;
+        padding: 0 20px;
+        color: #333333;
+        font-size: 16px;
+        &:hover{
+          color: $txt-color;
+        }
+      }
+    }
+    .tel{
+      float: right;
+      margin-top: 17px;
+      .icon{
+        float: left;
+        width: 52px;
+        height: 52px;
+        background: url("../images/tel.png") no-repeat;
+        margin-right: 8px;
+      }
+      .text{
+        float: right;
+        text-align: left;
+        .hotline{
+          font-size: 14px;
+          color: #666666;
+        }
+        .number{
+          font-size: 24px;
+          color: #ef562f;
+        }
+      }
+    }
+  }
+}
+
+.banner{
+  width: 100%;
+  height: 450px;
+  background-position:center;
+  background-size: cover;
+}
+
+.title-module{
+  height: 62px;
+  font-size: 40px;
+  color: #333333;
+
+  text-align: center;
+  position: relative;
+  strong{
+    font-weight: bold;
+    color: $txt-color;
+  }
+  .cn{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  .en{
+    color: #eeeeee;
+    position: absolute;
+    top: 22px;
+  }
+  .cn, .en{
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 40px;
+  }
+}
+
+.about-us{
+  padding-top: 60px;
+  .content{
+    background: url("../images/bg_1.png") no-repeat center right;
+    margin-top: 20px;
+    padding: 55px 0;
+    @extend %clearfix;
+    .school{
+      width: 520px;
+      height: 360px;
+      background-size: 100% 100%;
+      float: left;
+    }
+    .detail{
+      width: 592px;
+      height: 360px;
+      float: left;
+      margin-left: 50px;
+      .detail-title{
+        width: 440px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+        .left{
+          float: left;
+          width: 260px;
+          height: 42px;
+          background-color: $txt-color;
+          color: #ffffff;
+          border-radius: 21px 0 0 21px;
+        }
+        .right{
+          float: left;
+          width: 178px;
+          height: 40px;
+          border-radius: 0 21px 21px 0;
+          border: solid 1px $txt-color;
+          color: $txt-color;
+        }
+      }
+      .text{
+        font-size: 14px;
+        color: #333333;
+        line-height: 1.5;
+      }
+      .btn{
+        display: block;
+        width: 240px;
+        height: 48px;
+        line-height: 48px;
+        background-color: $bg-color;
+        border-radius: 8px;
+        border: solid 1px $bg-color;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.btn-module{
+  text-align: center;
+  a{
+    @extend %in-b;
+    width: 240px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 8px;
+    border: solid 1px $bg-color;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-right: 48px;
+    color: $bg-color;
+    &.active{
+      background-color: $bg-color;
+      color: #ffffff;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+/* 课程优势 */
+.course-advantage{
+  padding-top: 60px;
+  .content{
+    .text{
+      color: #666666;
+      font-size: 14px;
+      padding: 0 88px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    .advantage{
+      @extend %clearfix;
+      margin-right: -30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      li{
+        width: 216px;
+        height: 280px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: solid 1px #dddddd;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 30px;
+        padding-top: 57px;
+        text-align: center;
+        span{
+          display: block;
+          width: 100%;
+          font-size: 24px;
+          line-height: 24px;
+          color: #333333;
+          margin-top: 40px;
+          @extend %one;
+        }
+      }
+    }
+  }
+}
+
+/* 校区 */
+.campuses{
+  width: 100%;
+  height: 668px;
+  background: url("../images/bg_2.png") no-repeat center;
+  background-size: cover;
+  margin-top: 60px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  .content{
+    .area{
+      @extend %clearfix;
+      margin-right: -20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      li{
+        width: 285px;
+        height: 380px;
+        padding: 270px 52px 0;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 20px;
+        text-align: center;
+        background-size: 100% 100%;
+        .school-name{
+          width: 180px;
+          //height: 80px;
+          background-color: #167e48;
+          border-radius: 5px;
+          font-size: 16px;
+          color: #eeeeee;
+          padding: 8px 18px;
+          box-sizing: border-box;
+          line-height: 22px;
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 课程介绍 */
+.course-introduce{
+  width: 100%;
+  height: 804px;
+  background: url("../images/bg_3.png") no-repeat center bottom;
+  padding-top: 60px;
+  box-sizing: border-box;
+  .text{
+    width: 686px;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    margin: 24px auto 0;
+  }
+  .btn-module{
+    margin-top: 520px;
+  }
+}
+
+/* 教授 */
+.professor{
+  width: 100%;
+  height: 700px;
+  background: url("../images/bg_4.png") no-repeat center;
+  background-size: cover;
+  padding-top: 60px;
+  box-sizing: border-box;
+  .title-module{
+    .cn{
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .en{
+      color: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  .content{
+    .area{
+      @extend %clearfix;
+      margin-right: -30px;
+      margin-top: 130px;
+      margin-bottom: 40px;
+      li{
+        width: 380px;
+        height: 350px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0 34px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 30px;
+        text-align: center;
+        background-size: 100% 100%;
+        .avatar{
+          margin-top: -60px;
+        }
+        .name{
+          font-size: 24px;
+          line-height: 24px;
+          color: #333333;
+          margin-top: 20px;
+          span{
+            font-size: 14px;
+            color: #999999;
+          }
+        }
+        .honor{
+          margin-top: 16px;
+          strong{
+            display: block;
+            font-size: 16px;
+            line-height: 16px;
+            color: $txt-color;
+            font-weight: normal;
+          }
+          span{
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            color: #999999;
+            margin-top: 10px;
+          }
+        }
+        .experience{
+          margin-top: 40px;
+          .item{
+            @extend %clearfix;
+            .icon{
+              float: left;
+              display: block;
+              width: 12px;
+              height: 12px;
+              background: url("../images/arrows.png") no-repeat;
+              margin-right: 6px;
+              margin-top: 5px;
+            }
+            p{
+              float: left;
+              width: 294px;
+              line-height: 1.5;
+              text-align: left;
+              font-size: 14px;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+    .btn-module{
+      a{
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        &.active{
+          border: 1px solid $bg-color;
+        }
+      }
+    }
+  }
+}
