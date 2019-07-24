@@ -201,11 +201,24 @@ input[type='text'], select {
     margin-top: 20px;
     padding: 55px 0;
     @extend %clearfix;
-    .school {
+    .swiper-container {
       width: 520px;
       height: 360px;
-      background-size: 100% 100%;
       float: left;
+      .swiper-slide-active{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      span{
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        opacity: 1;
+        &.swiper-pagination-bullet-active{
+          width: 22px;
+          border-radius: 11px;
+        }
+      }
     }
     .detail {
       width: 592px;
@@ -701,7 +714,7 @@ input[type='text'], select {
         border-right: 0;
       }
       &:hover{
-        color: $txt-color;
+        color: $bg-color;
       }
     }
   }
@@ -957,6 +970,7 @@ input[type='text'], select {
   margin: auto;
   z-index: 100;
   text-align: center;
+  display: none;
   .close{
     display: block;
     width: 24px;

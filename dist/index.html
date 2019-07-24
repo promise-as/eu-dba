@@ -5,6 +5,9 @@
   <title>UE商学院-PC端</title>
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/swiper-3.3.1.min.css">
+  <script type="text/javascript" src="https://img.thea.cn/public/js/swiper-3.3.1.min.js"></script>
 </head>
 <body>
 
@@ -50,8 +53,26 @@
     </div>
 
     <div class="content">
-      <div class="school" style="background-image: url('images/eu-school.png')">
+      <!--<div class="school" style="background-image: url('images/eu-school.png')">
+      </div>-->
+
+      <!-- 轮播图 -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/eu-school_1.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/eu-school_2.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/eu-school_3.png">
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
       </div>
+
       <div class="detail">
         <div class="detail-title">
           <span class="left">全球DBA院校22强</span>
@@ -495,6 +516,15 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+  })
+</script>
 
 </body>
 </html>
