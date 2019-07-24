@@ -1,11 +1,70 @@
 @charset "UTF-8";
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]:-moz-placeholder,
+select:-moz-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]::-moz-placeholder,
+select::-moz-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="text"]:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #999;
+  font-size: inherit;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  font-family: '微软雅黑';
+}
+
+select {
+  border: none;
+  text-indent: 1em;
+}
+
+option {
+  text-indent: 1em;
+  font-family: '微软雅黑';
+}
+
+input[type="text"],
+select {
+  border: none;
+  text-indent: 1em;
+}
+
 .course-advantage .content .advantage li span {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.btn-module a, .schoolmate .content .happy, #footer-div .links a {
+.header .header-right .nav a, .btn-module a, .schoolmate .content .happy, #footer-div .links a, .right-suspension .nav a, .appoint .choice .choice-item {
   display: inline-block;
   *zoom: 1;
   *display: inline;
@@ -57,16 +116,20 @@
   margin-top: 35px;
 }
 
-.header .header-right .nav li {
+.header .header-right .nav a {
   float: left;
-  cursor: pointer;
   padding: 0 20px;
   color: #333333;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.header .header-right .nav li:hover {
-  color: #167e48;
+.header .header-right .nav a.active {
+  color: #f0552f;
+}
+
+.header .header-right .nav a:hover {
+  color: #f0552f;
 }
 
 .header .header-right .tel {
@@ -102,6 +165,26 @@
   height: 450px;
   background-position: center;
   background-size: cover;
+  padding-top: 333px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner .btn {
+  width: 500px;
+  height: 52px;
+  margin: 0 auto;
+}
+
+.banner .btn a {
+  width: 230px;
+  height: 52px;
+  border-radius: 26px;
+  float: left;
+}
+
+.banner .btn a:nth-of-type(2) {
+  float: right;
 }
 
 .title-module {
@@ -207,6 +290,10 @@
   margin-top: 30px;
 }
 
+.about-us .content .detail .btn:hover {
+  background-color: #E0552F;
+}
+
 .btn-module {
   text-align: center;
 }
@@ -222,9 +309,13 @@
   font-size: 18px;
   margin-right: 48px;
   color: #f0552f;
+  /*&.active {
+      background-color: $bg-color;
+      color: #ffffff;
+    }*/
 }
 
-.btn-module a.active {
+.btn-module a:hover {
   background-color: #f0552f;
   color: #ffffff;
 }
@@ -444,9 +535,12 @@
 .professor .content .btn-module a {
   border: 1px solid #ffffff;
   color: #ffffff;
+  /*&.active {
+          border: 1px solid $bg-color;
+        }*/
 }
 
-.professor .content .btn-module a.active {
+.professor .content .btn-module a:hover {
   border: 1px solid #f0552f;
 }
 
@@ -638,9 +732,12 @@
 .application .btn-module a {
   border: 1px solid #ffffff;
   color: #ffffff;
+  /*&.active {
+          border: 1px solid $bg-color;
+        }*/
 }
 
-.application .btn-module a.active {
+.application .btn-module a:hover {
   border: 1px solid #f0552f;
 }
 
@@ -753,4 +850,240 @@
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+/* 右悬浮 */
+.right-suspension {
+  width: 156px;
+  height: 380px;
+  background: url("../images/right-suspension.png") no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.right-suspension .close {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.right-suspension .title {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 26px;
+}
+
+.right-suspension .tel {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.right-suspension .nav a {
+  width: 130px;
+  height: 37px;
+  line-height: 37px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  font-size: 16px;
+  color: #167e48;
+  margin-bottom: 9px;
+}
+
+.right-suspension .to-top {
+  width: 112px;
+  height: 52px;
+  line-height: 70px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+/* 遮罩层 */
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+/* 预约试听弹窗 */
+.appoint {
+  width: 560px;
+  height: 350px;
+  background: url("../images/appointment.png") no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  text-align: center;
+  display: none;
+}
+
+.appoint .close {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.appoint .title {
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 28px;
+}
+
+.appoint .title strong {
+  color: #fff885;
+}
+
+.appoint .choice {
+  font-size: 16px;
+  height: 18px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.appoint .choice .choice-item {
+  position: relative;
+  padding-left: 28px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.appoint .choice .choice-item:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.appoint .choice .choice-item.active:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f0552f;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4px;
+  margin: auto;
+}
+
+.appoint .sign-in {
+  width: 480px;
+  height: 207px;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 10px;
+  margin: 24px auto 0;
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.appoint .sign-in input {
+  width: 430px;
+  height: 42px;
+  line-height: 42px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: solid 1px #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.appoint .sign-in input[type='submit'] {
+  background-color: #f35252;
+  border: solid 1px #f35252;
+  color: #ffffff;
+}
+
+.appoint .sign-in .hint {
+  font-size: 14px;
+  color: #999999;
+}
+
+.appoint .sign-in .hint strong {
+  color: #ec5234;
+}
+
+/* 预约试听弹窗 */
+.popup {
+  width: 600px;
+  height: 350px;
+  background: url("../images/popup.png") no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  text-align: center;
+}
+
+.popup .close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.popup .btn {
+  width: 400px;
+  height: 46px;
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.popup .btn a {
+  width: 200px;
+  height: 46px;
+  float: left;
+}
+
+.popup .btn a:nth-of-type(2) {
+  float: right;
 }
