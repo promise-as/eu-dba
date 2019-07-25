@@ -123,7 +123,7 @@ input[type='text'], select {
         float: left;
         width: 52px;
         height: 52px;
-        background: url("../images/tel.png") no-repeat;
+        background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/tel.png") no-repeat;
         margin-right: 8px;
       }
       .text {
@@ -197,7 +197,7 @@ input[type='text'], select {
 .about-us {
   padding-top: 60px;
   .content {
-    background: url("../images/bg_1.png") no-repeat center right;
+    background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_1.png") no-repeat center right;
     margin-top: 20px;
     padding: 55px 0;
     @extend %clearfix;
@@ -217,6 +217,7 @@ input[type='text'], select {
         &.swiper-pagination-bullet-active{
           width: 22px;
           border-radius: 11px;
+          background-color: $bg-color;
         }
       }
     }
@@ -287,10 +288,10 @@ input[type='text'], select {
     font-size: 18px;
     margin-right: 48px;
     color: $bg-color;
-    /*&.active {
+    &.active {
       background-color: $bg-color;
       color: #ffffff;
-    }*/
+    }
     &:hover{
       background-color: $bg-color;
       color: #ffffff;
@@ -346,7 +347,7 @@ input[type='text'], select {
 .campuses {
   width: 100%;
   height: 668px;
-  background: url("../images/bg_2.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_2.png") no-repeat center;
   background-size: cover;
   margin-top: 60px;
   padding-top: 50px;
@@ -389,7 +390,7 @@ input[type='text'], select {
 .course-introduce {
   width: 100%;
   height: 804px;
-  background: url("../images/bg_3.png") no-repeat center bottom;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_3.png") no-repeat center bottom;
   padding-top: 60px;
   box-sizing: border-box;
   .text {
@@ -408,7 +409,7 @@ input[type='text'], select {
 .professor {
   width: 100%;
   height: 700px;
-  background: url("../images/bg_4.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_4.png") no-repeat center;
   background-size: cover;
   padding-top: 50px;
   box-sizing: border-box;
@@ -477,7 +478,7 @@ input[type='text'], select {
               display: block;
               width: 12px;
               height: 12px;
-              background: url("../images/arrows.png") no-repeat;
+              background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/arrows.png") no-repeat;
               margin-right: 6px;
               margin-top: 5px;
             }
@@ -497,9 +498,9 @@ input[type='text'], select {
       a {
         border: 1px solid #ffffff;
         color: #ffffff;
-        /*&.active {
+        &.active {
           border: 1px solid $bg-color;
-        }*/
+        }
         &:hover{
           border: 1px solid $bg-color;
         }
@@ -517,7 +518,7 @@ input[type='text'], select {
   .content {
     width: 1360px;
     height: 663px;
-    background: url("../images/bg_5.png") no-repeat center bottom;
+    background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_5.png") no-repeat center bottom;
     margin: 50px auto 40px;
     padding: 0 80px;
     box-sizing: border-box;
@@ -546,7 +547,7 @@ input[type='text'], select {
 .application {
   width: 100%;
   height: 560px;
-  background: url("../images/bg_6.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/bg_6.png") no-repeat center;
   background-size: cover;
   padding-top: 40px;
   box-sizing: border-box;
@@ -672,9 +673,9 @@ input[type='text'], select {
     a {
       border: 1px solid #ffffff;
       color: #ffffff;
-      /*&.active {
+      &.active {
           border: 1px solid $bg-color;
-        }*/
+        }
       &:hover{
         border: 1px solid $bg-color;
       }
@@ -724,20 +725,22 @@ input[type='text'], select {
 .ad-site{
   width: 100%;
   height: 120px;
+  display: none;
 }
 .ad{
   width: 100%;
   height: 120px;
-  background: url("../images/ad.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/ad.png") no-repeat center;
   position: fixed;
   bottom: 0;
   z-index: 100;
+  display: none;
   .close{
     display: block;
     float: right;
     width: 26px;
     height: 26px;
-    background: url("../images/close.png") no-repeat center;
+    background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/close.png") no-repeat center;
     margin-top: 4px;
     margin-right: -120px;
     cursor: pointer;
@@ -782,7 +785,7 @@ input[type='text'], select {
 .right-suspension{
   width: 156px;
   height: 380px;
-  background: url("../images/right-suspension.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/right-suspension.png") no-repeat;
 
   position: fixed;
   top: 0;
@@ -854,7 +857,7 @@ input[type='text'], select {
 .appoint{
   width: 560px;
   height: 350px;
-  background: url("../images/appointment.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/appointment.png") no-repeat;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -961,7 +964,7 @@ input[type='text'], select {
 .popup{
   width: 600px;
   height: 350px;
-  background: url("../images/popup.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201907/hbj/EU-DBA/images/popup.png") no-repeat;
   position: fixed;
   top: 0;
   bottom: 0;
